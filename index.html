@@ -1,0 +1,43 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Fake - SPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Facebook Fake</h1>
+        <input type="text" placeholder="Buscar..." class="search-bar">
+    </header>
+
+    <!-- Layout principal -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-pic"></div>
+            <h2>Mi Nombre</h2>
+            <nav>
+                <button onclick="navigate('muro')">Muro</button>
+                <button onclick="navigate('info')">Info</button>
+                <button onclick="navigate('fotos')">Photos</button>
+                <button onclick="navigate('boxes')">Boxes</button>
+            </nav>
+        </aside>
+
+        <!-- Contenido dinámico -->
+        <main id="content">
+            <!-- Aquí se carga lo que diga app.js -->
+        </main>
+    </div>
+
+    <footer class="footer">
+        Parcial 1 - SPA con Flexbox y Grid
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
